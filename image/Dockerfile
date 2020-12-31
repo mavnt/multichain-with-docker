@@ -1,8 +1,8 @@
 FROM alpine
 RUN cd /tmp && \
-    wget https://www.multichain.com/download/multichain-2.0.7.tar.gz && \
-    tar -xvzf multichain-2.0.7.tar.gz && \
-    cd multichain-2.0.7 && \
+    wget https://www.multichain.com/download/multichain-2.1.1.tar.gz && \
+    tar -xvzf multichain-2.1.1.tar.gz && \
+    cd multichain-2.1.1 && \
     mv multichaind multichain-cli multichain-util /usr/local/bin
 WORKDIR /root
 COPY firstnode.sh firstnode.sh
